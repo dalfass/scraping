@@ -15,8 +15,6 @@ def scrape_bbpp_kupang():
 
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    # Mencari konten utama (biasanya di dalam div artikel atau entry-content)
-    # Catatan: Selektor ini disesuaikan dengan struktur umum web pemerintah
     content_div = soup.find('div', class_='entry-content') or soup.find('div', class_='post-content')
     
     data_sejarah = {
