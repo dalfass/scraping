@@ -57,26 +57,3 @@ python client_cli.py
 curl http://localhost:5000/data
 ```
 
----
-
-## Kaitan dengan Materi Pertemuan 3
-
-| Konsep Slide        | Implementasi dalam Kode                          |
-|---------------------|--------------------------------------------------|
-| Socket (bind/listen/accept) | Flask-SocketIO menangani semua ini otomatis |
-| HTTP Request/Response | `requests.get()` untuk scraping target      |
-| Framework Flask     | `@app.route("/")` routing halaman utama          |
-| Manual → Framework  | Socket murni diganti Flask-SocketIO              |
-| Client-Server       | Browser/CLI ↔ server via WebSocket               |
-
----
-
-## Event WebSocket
-
-| Event             | Arah            | Keterangan                        |
-|-------------------|-----------------|-----------------------------------|
-| `connect`         | Server → Client | Konfirmasi koneksi berhasil       |
-| `start_scrape`    | Client → Server | Perintah mulai scraping           |
-| `scrape_log`      | Server → Client | Log real-time progres scraping    |
-| `scrape_done`     | Server → Client | Hasil scraping lengkap (JSON)     |
-| `scrape_error`    | Server → Client | Notifikasi jika terjadi error     |
