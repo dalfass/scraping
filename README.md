@@ -1,32 +1,5 @@
-# 🔌 Web Scraping + WebSocket — BBPP Kupang
-### Pertemuan 3: Socket Programming + Flask Framework
-
----
-
-## Arsitektur Sistem
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                     server.py                           │
-│                                                         │
-│  ┌──────────┐   ┌─────────────┐   ┌────────────────┐   │
-│  │  Flask   │   │ Flask-      │   │  Scraper       │   │
-│  │  HTTP    │   │ SocketIO    │   │  (requests +   │   │
-│  │  /       │   │ WebSocket   │   │  BeautifulSoup)│   │
-│  └──────────┘   └─────────────┘   └────────────────┘   │
-│       │               │                   │             │
-│       └───────────────┴───────────────────┘             │
-│                       │                                 │
-│               data_bbppkupang.json                      │
-└───────────────────────┬─────────────────────────────────┘
-                        │  WebSocket (ws://)
-          ┌─────────────┴──────────────┐
-          │                            │
-   ┌──────▼──────┐             ┌───────▼──────┐
-   │  Browser    │             │  client_cli  │
-   │  (HTML/JS)  │             │  (Terminal)  │
-   └─────────────┘             └──────────────┘
-```
+NAMA: DIQI ALFAS SALAM
+NIM: 241080200114
 
 ## Alur Komunikasi WebSocket
 
