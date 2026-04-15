@@ -44,7 +44,7 @@ Output:
 ```
 
 ### 3A. Gunakan via Browser
-Buka `http://localhost:5000`, klik -> Mulai Scraping**.  
+Buka `http://localhost:5000`, klik -> Mulai Scraping.  
 Log real-time akan muncul, hasil ditampilkan otomatis.
 
 ### 3B. Gunakan via Terminal
